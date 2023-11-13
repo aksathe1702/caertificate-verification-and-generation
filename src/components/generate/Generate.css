@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css?family=Spartan&display=swap');
+
+:root {
+  --form-bg: #f8f4e5;
+  --form-border: #f45702;
+  --form-shadow: #dfae4b;
+  --form-focus: #6bd4b1;
+  --font-size: 12pt;
+  --font-face: 'Spartan';
+  --font-color: #2A293E;
+}
+
+.second
+{
+   height: 180px;
+   background-image: url("/public/images/header-background.png");
+ margin-top: 55px;
+ 
+}
+
+
+.container_generate
+{
+    background-color:white;
+    width:50%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-us {
+  background-color:white;
+  padding: 50px 100px;
+  border-top: 10px solid var(--form-border);
+}
+
+.label,
+.input,
+.textarea {
+  display: block;
+  width: 100%;
+  font-size: var(--font-size);
+  line-height: calc(var(--font-size) * 2);
+  font-family: var(--font-face);
+}
+
+.input {
+  margin-bottom: calc(var(--font-size) * 2);
+}
+
+h3 {
+  font-weight: normal;
+  font-size: 10pt;
+  line-height: calc(var(--font-size) * 2);
+  font-style: italic;
+  margin: 0 0 .5em 0;
+}
+
+span {
+  font-size: 8pt;
+}
+
+em {
+  color: var(--form-border);
+  font-weight: bold;
+}
+
+.input,
+.textarea {
+  border: none;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+  background: var(--form-bg);
+  padding-left: 5px;
+  outline: none;
+}
+
+.input:focus,
+.textarea:focus {
+  border: 1px solid var(--form-focus);
+}
+
+.textarea {
+  resize: none;
+}
+
+.generate_cert {
+  display: block;
+  float: right;
+  line-height: calc(var(--font-size) * 2);
+  border: none;
+  background: var(--form-border);
+  color: white;
+  letter-spacing: 2px;
+  transition: 0.2s all ease-in-out;
+  border-bottom: 2px solid transparent;
+  outline: none;
+  margin-right:100px;
+}
+
+button:hover {
+  background: inherit;
+  color: var(--form-border);
+  border-bottom: 2px solid var(--form-border);
+}
+
+::selection {
+  background: rgb(255, 199, 184);
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus {
+  border: 1px solid var(--form-focus);
+  -webkit-text-fill-color: var(--font-color);
+  -webkit-box-shadow: 0 0 0px 1000px var(--form-bg) inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
